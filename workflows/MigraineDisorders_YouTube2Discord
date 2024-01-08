@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Discord notification
         env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_DISORDERS }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_USERNAME: ${{ secrets.DISCORD_USERNAME_DISORDERS }}
           DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_DISORDERS }}
         uses: Ilshidur/action-discord@master
