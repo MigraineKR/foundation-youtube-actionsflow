@@ -10,9 +10,9 @@ jobs:
     steps:
       - name: Discord notification
         env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_DISORDERS }}
-          DISCORD_USERNAME: ${{ secrets.DISCORD_USERNAME_DISORDERS }}
-          DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_DISORDERS }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_ }}
+          DISCORD_USERNAME: ${{ secrets.DISCORD_USERNAME_TRUST }}
+          DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_TRUST }}
         uses: Ilshidur/action-discord@master
         with:
-          args: "`Migraine Disorders - YouTube`'\n'**${{on.youtube.outputs.title}}**'\n'${{on.youtube.outputs.link}}"
+          args: "`The Migraine Trust - YouTube`'\n'**${{on.youtube.outputs.title}}**'\n'${{on.youtube.outputs.link}}"
