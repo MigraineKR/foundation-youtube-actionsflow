@@ -1,0 +1,18 @@
+name: Send a Discord message when new Youtube videos update
+on:
+  youtube:
+    channel_id:
+      - UCNxdkP59r-4FwgziffOj3Rg
+jobs:
+  discord:
+    name: Send a message to discord
+    runs-on: ubuntu-latest
+    steps:
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_USERNAME: ${{ secrets.DISCORD_USERNAME_CHAMP }}
+          DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_CHAMP }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: "`Coalition for Headache and Migraine Patients - YouTube`'\n'**${{on.youtube.outputs.title}}**'\n'${{on.youtube.outputs.link}}"
