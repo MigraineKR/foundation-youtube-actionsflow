@@ -2,7 +2,7 @@ name: Send a Discord message when new Youtube videos update
 on:
   youtube:
     channel_id:
-      - UCIdFnxf_vx6gqZO5Nh-kEjg
+      - UCvrJXbZRQdBL5Zrl6iTrGjA
 jobs:
   discord:
     name: Send a message to discord
