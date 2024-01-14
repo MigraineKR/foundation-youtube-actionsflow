@@ -1,0 +1,18 @@
+name: Send a Discord message when new Youtube videos update
+on:
+  youtube:
+    channel_id:
+      - UCU9R5vXtPGIH5crPYA_075Q
+jobs:
+  discord:
+    name: Send a message to discord
+    runs-on: ubuntu-latest
+    steps:
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_USERNAME: ${{ secrets.DISCORD_USERNAME_SHADES }}
+          DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_SHADES }}
+        uses: EBfVince/action-discord@master
+        with:
+          args: "`Shades For Migraine - YouTube`\n**${{on.youtube.outputs.title}}**\n${{on.youtube.outputs.link}}"
