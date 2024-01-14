@@ -15,4 +15,4 @@ jobs:
           DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_SHADES }}
         uses: EBfVince/action-discord@master
         with:
-          args: "`Shades For Migraine - YouTube`\n**${{on.youtube.outputs.title}}**\n${{on.youtube.outputs.link}}"
+          args: "`Shades For Migraine - YouTube`\n\n**${{on.youtube.outputs.title}}**\n${{on.youtube.outputs.link}}"
