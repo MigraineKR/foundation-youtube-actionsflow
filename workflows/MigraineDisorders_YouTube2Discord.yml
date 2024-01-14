@@ -15,4 +15,4 @@ jobs:
           DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_DISORDERS }}
         uses: Ilshidur/action-discord@master
         with:
-          args: "`Migraine Disorders - YouTube`'\n'**${{on.youtube.outputs.title}}**'\n'${{on.youtube.outputs.link}}"
+          args: "\"`Migraine Disorders - YouTube`\"\n**${{on.youtube.outputs.title}}**\n${{on.youtube.outputs.link}}"
