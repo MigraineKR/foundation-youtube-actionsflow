@@ -15,4 +15,4 @@ jobs:
           DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_CHAMP }}
         uses: Ilshidur/action-discord@master
         with:
-          args: "`Coalition for Headache and Migraine Patients - YouTube`'\n'**${{on.youtube.outputs.title}}**'\n'${{on.youtube.outputs.link}}"
+          args: "\"`Coalition for Headache and Migraine Patients - YouTube`\"\n**${{on.youtube.outputs.title}}**\n${{on.youtube.outputs.link}}"
