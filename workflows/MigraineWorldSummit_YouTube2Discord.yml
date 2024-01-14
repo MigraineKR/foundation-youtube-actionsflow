@@ -13,6 +13,6 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_USERNAME: ${{ secrets.DISCORD_USERNAME_SUMMIT }}
           DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_SUMMIT }}
-        uses: Ilshidur/action-discord@master
+        uses: EBfVince/action-discord@master
         with:
-          args: "\"`Migraine World Summit - YouTube`\"\n\"**${{ on.youtube.outputs.title }}**\"\n\"${{ on.youtube.outputs.link }}\""
+          args: "`Migraine World Summit - YouTube`\n**${{ on.youtube.outputs.title }}**\n${{ on.youtube.outputs.link }}"
