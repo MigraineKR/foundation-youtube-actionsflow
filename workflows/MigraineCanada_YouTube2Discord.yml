@@ -15,4 +15,4 @@ jobs:
           DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_CANADA }}
         uses: Ilshidur/action-discord@master
         with:
-          args: "`Migraine Canada - YouTube`'\n'**${{on.youtube.outputs.title}}**'\n'${{on.youtube.outputs.link}}"
+          args: "`Migraine Canada - YouTube`\n**${{on.youtube.outputs.title}}**\n${{on.youtube.outputs.link}}"
