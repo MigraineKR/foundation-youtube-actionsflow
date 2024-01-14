@@ -13,6 +13,6 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_USERNAME: ${{ secrets.DISCORD_USERNAME_AGAIN }}
           DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_AGAIN }}
-        uses: Ilshidur/action-discord@master
+        uses: EBfVince/action-discord@master
         with:
-          args: "`Migraine Again - YouTube`'\n'**${{on.youtube.outputs.title}}**'\n'${{on.youtube.outputs.link}}"
+          args: "`Migraine Again - YouTube`\n**${{on.youtube.outputs.title}}**\n${{on.youtube.outputs.link}}"
