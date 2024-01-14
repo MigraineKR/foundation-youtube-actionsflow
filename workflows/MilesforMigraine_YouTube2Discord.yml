@@ -15,4 +15,4 @@ jobs:
           DISCORD_AVATAR: ${{ secrets.DISCORD_AVATAR_MILES }}
         uses: Ilshidur/action-discord@master
         with:
-          args: "`Miles for Migraine - YouTube`'\n'**${{on.youtube.outputs.title}}**'\n'${{on.youtube.outputs.link}}"
+          args: "\"`Miles for Migraine - Youtube`\"\n**${{on.youtube.outputs.title}}**\n${{on.youtube.outputs.link}}"
